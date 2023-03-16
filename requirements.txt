@@ -6,3 +6,5 @@ catboost
 lightgbm
 streamlit
 lime
+flask
+pickle
