@@ -6,11 +6,11 @@ from flask import Flask
 app = Flask(__name__)
 app.config["DEBUG"] = True
 # chargement du modele
-pickle_inp = open('model.pickle', "rb")
+pickle_inp = open('models/lgbm.pickle', "rb")
 classifier = pickle.load(pickle_inp)
 
 # importer les donnees test
-x_test = pd.read_csv("data_test_samle.csv")
+x_test = pd.read_csv("data/test_data.csv")
 
 @app.route('/predict/<ID>', methods=['GET'])
 def make_predict(ID):
