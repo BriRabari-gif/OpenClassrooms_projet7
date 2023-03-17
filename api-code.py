@@ -25,6 +25,7 @@ def make_predict(ID):
     proba_json = {'probabilite': str(proba)}
     from flask import jsonify
     return jsonify(str(proba))
+    #--
 
 if __name__ == '__main__':
     app.run()

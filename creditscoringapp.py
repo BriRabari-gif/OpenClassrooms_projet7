@@ -12,7 +12,7 @@ st.markdown('#### this app is built using Streamlit, for the purpose of credit s
 data_path = 'data/test_data.csv'
 infos_data_path = 'data/clients_infos.csv'
 models_path = 'models/'
-
+#---
 # load data
 @st.cache_data
 def get_data(path):
